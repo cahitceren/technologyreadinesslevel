@@ -16,7 +16,7 @@
 	function myFunction2() {
   		let htmlString = document.getElementById("unraw").value;
 		//let plainText = htmlString.replace(/<[^>]+>/g, '');
-		var patt = /([1-9]+)\.(?=\d{3}(\D|$))/g;
+		var patt = /([1-9]\d+)\.(?=\d{3}(\D|$))/g;
   		var newstr = htmlString.replace(patt, "$1")
   		document.getElementById("unraw2").value = newstr
   		myFunction3();
