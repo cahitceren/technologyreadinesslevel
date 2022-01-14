@@ -62,6 +62,7 @@
 			  console.log(match.index)
 			  match[0] = match[0].slice(0, -1); 
 			  match[0] = match[0].replaceAll("x","*")
+			match[0] = match[0].replaceAll("X","*")
 			  match[0] = match[0].replaceAll(",",".")
 			  console.log(match);
 			  try {
