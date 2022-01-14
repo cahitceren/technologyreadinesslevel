@@ -43,7 +43,7 @@
 	function myFunction5() {
   		let htmlString = document.getElementById("unraw4").value;
 		//let plainText = htmlString.replace(/<[^>]+>/g, '');
-		var patt = /[^0-9+\-*x\/=,\s\.\)\(\[\]]/g;
+		var patt = /[^0-9+\-*xX\/=,\s\.\)\(\[\]]/g;
   		var newstr = htmlString.replace(patt, "")
   		document.getElementById("unraw5").value = newstr
   		myFunction6();
